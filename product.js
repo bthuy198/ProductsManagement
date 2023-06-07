@@ -301,10 +301,12 @@ function searchByName() {
         return;
     } else {
         renderSearchList(resultSearch);
-        document.getElementById('search').value = '';
+        // document.getElementById('search').value = '';
     }
 
 }
+
+
 function renderSearchList(productIdArray) {
     let tbSearchResult = '';
     for (let i = 0; i < products.length; i++) {

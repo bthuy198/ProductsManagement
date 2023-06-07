@@ -25,7 +25,7 @@
     height: 100vh;
     display: block;
     height: 110vh;
-    
+
 
     background: var(--blue);
     color: var(--white);
@@ -69,24 +69,34 @@ select::after {
     border-radius: 5px;
 }
 
-#conditions>option, #locations>option{
+#conditions>option,
+#locations>option {
     background-color: none;
 }
 
 .left-btn-div {
     padding-top: 10px;
     max-width: 97%;
+    display: flex;
     flex-wrap: nowrap;
+    position: relative;
+
     /* background-color: #EFEFEF; */
 }
 
-.left-btn-div>div:first-child{
-    float: left;
+.left-btn-div>div:first-child {
+    max-width: 50%;
+    left: 0;
+    /* float: left; */
+    /* display: block; */
 }
 
-.left-btn-div>div:last-child{
-    float: right;
-    
+.left-btn-div>div:last-child {
+    position: absolute;
+    right: 0;
+    max-width: 50%;
+    /* float: right; */
+    /* display: block; */
 }
 
 .left-btn-div>div>button {
@@ -95,7 +105,7 @@ select::after {
     border: 1px solid var(--light-grey);
     border-radius: 5px;
     font-size: 15px;
-    padding: 7px 43px;
+    padding: 7px 40px;
 }
 
 .left-btn-div>div>button:hover {
@@ -192,10 +202,12 @@ select::after {
     border-bottom-right-radius: 5px;
     cursor: pointer;
 }
-.search-container button i{
+
+.search-container button i {
     color: var(--white);
-    
+
 }
+
 .search-container button:hover {
     background: #e71c55;
     border: 1px solid #e71c55;
@@ -203,7 +215,8 @@ select::after {
     border-bottom-right-radius: 5px;
 }
 
-#btn-success:hover, #btn-edit:hover{
+#btn-success:hover,
+#btn-edit:hover {
     background: var(--darkPink);
     cursor: pointer;
 }
@@ -319,4 +332,3 @@ select::after {
     border: 1.5px solid var(--pink);
     font-weight: bold;
 }
-
